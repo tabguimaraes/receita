@@ -1,7 +1,7 @@
 # Miojo Turbinado
 
 <div style="text-align: center;">
-<img style="border-radius: 10px" src="./receita/foto.webp" alt="Miojo Turbinado" width="200" height="auto" /></div>
+<img style="border-radius: 10px" src="./foto.webp" alt="Miojo Turbinado" width="200" height="auto" /></div>
 
 ## Descrição
 
