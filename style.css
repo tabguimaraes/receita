@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  place-self: center;
+  height: 100vh;
+  font-family: "Roboto Flex";
+  background: linear-gradient(to right, #f3f9a7, #cac531); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+header {
+  margin-top: 1%;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1,
+h2 {
+  margin-bottom: 1rem;
+}
+
+#grid-container {
+  font-size: clamp(1rem, 1.5vw, 4rem);
+  max-width: 85vw;
+  display: grid;
+  grid-template-areas: "foto ingredientes preparo";
+  column-gap: 2%;
+}
+
+@media (max-width: 900px) {
+  #grid-container {
+    grid-template-areas:
+      "ingredientes"
+      "preparo";
+    row-gap: 2%;
+    column-gap: 0;
+  }
+  picture.grid-item > img {
+    display: none;
+  }
+}
+
+picture.grid-item > img {
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+#foto {
+  grid-area: foto;
+}
+
+#ingredientes {
+  grid-area: ingredientes;
+}
+
+#ingredientes li p span {
+  font-weight: 700;
+}
+
+#ingredientes.grid-item li {
+  padding: 10px;
+}
+
+#preparo li {
+  line-height: 2rem;
+}
+
+#preparo.grid-item p,
+li {
+  padding: 10px;
+}
+
+#preparo {
+  grid-area: preparo;
+}
+
+span i {
+  color: white;
+}
+
+#preparo span {
+  padding: 4px;
+  background-color: gray;
+  border-radius: 10%;
+}
