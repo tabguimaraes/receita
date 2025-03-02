@@ -48,6 +48,7 @@ h2 {
 
 @media (max-width: 900px) {
   #grid-container {
+    max-width: 70vw;
     grid-template-areas:
       "ingredientes"
       "preparo";
