@@ -96,10 +96,12 @@ li {
 
 span i {
   color: white;
+  /* margin-right: 20px; */
 }
 
 #preparo span {
   padding: 4px;
+  margin-right: 5px;
   background-color: gray;
   border-radius: 10%;
 }
